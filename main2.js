@@ -1,6 +1,7 @@
 window.addEventListener('beforeunload',save);
 
 let accountsTableBody = document.querySelector("#atb");
+let accountsTableHead = document.querySelector("#head-table");
 //let accountsViewBtn = document.querySelector('[href="accounts-view"]');
 //let addAccountsViewBtn = document.querySelector('[href="add-account-view"]');
 let allLinks = document.querySelectorAll('.nav-link');
@@ -18,12 +19,15 @@ let eNAME = document.querySelector('.eNAME');
 let eLASTNAME = document.querySelector('.eLASTNAME');
 let eEMAIL = document.querySelector('.eEMAIL');
 let ePHONE = document.querySelector('.ePHONE');
-let editBtn = document.querySelector('#edit')
+let btnAddings = document.querySelectorAll('.adding');
+let editBtn = document.querySelector('#edit');
 let id;
+var idLoop = 1;
+
 editBtn.addEventListener('click',saveEditedAccount);
 function saveEditedAccount(){
     const editedAccount = {
-        id: eID.value,
+        
         name: eNAME.value,
         lastname: eLASTNAME.value,
         email: eEMAIL.value,
@@ -37,14 +41,14 @@ function saveEditedAccount(){
 saveBtn.addEventListener('click',saveAccount);
 function saveAccount(){
     const newAccount = {
-        id : idInput.value,
+        id : idLoop++,
         name : nameInput.value,
         lastname : lastnameInput.value,
         email : emailInput.value,
         phone : phoneInput.value,
     };
     bd.push(newAccount);
-    idInput.value = "";
+    idInput.value = idLoop;
     nameInput.value = "";
     lastnameInput.value = "";
     emailInput.value = "";
@@ -84,13 +88,15 @@ createAccountsTable();
 //});
 
 
+
+
 function createAccountsTable(){
     let htmlAccounts = ``;
     for (let i = 0; i < bd.length; i++){
         const account = bd[i];
         htmlAccounts +=
-   
-    `<tr>
+`
+     <tr>
          <td>${account.id}</td>
          <td>${account.name}</td>
          <td>${account.lastname}</td>
@@ -101,8 +107,10 @@ function createAccountsTable(){
     }
     accountsTableBody.innerHTML = htmlAccounts;
     let allDeleteBtn = document.querySelectorAll('.delete-btn');    
-    let allEditBtn = document.querySelectorAll('.edit-btn')
+    let allEditBtn = document.querySelectorAll('.edit-btn');
 
+    
+    
     for(let i = 0; i < allDeleteBtn.length; i++) {
         allDeleteBtn[i].addEventListener('click',allDelete);
         allEditBtn[i].addEventListener('click',allEdit);
@@ -114,11 +122,12 @@ function allDelete(){
     bd.splice(id,1);
     createAccountsTable();
     showView("#accounts-view");
+    idLoop--;
 }
 function allEdit(){
-    id = this.getAttribute('data-id');
+    let id = this.getAttribute('data-id');
     let selectedAccount = bd[id];
-    eID.value = selectedAccount.id;
+//    eID.value = selectedAccount.id;
     eNAME.value = selectedAccount.name;   
     eLASTNAME.value = selectedAccount.lastname;
     eEMAIL.value = selectedAccount.email;
@@ -129,3 +138,11 @@ function allEdit(){
 function save(){
     localStorage.bd = JSON.stringify(bd);
 }
+
+var img = document.querySelector('img');
+var counter = 1;
+var loop = setInterval(function(){
+    counter++;
+    (counter === 4) ? counter = 1 : counter = counter;
+    img.setAttribute('src','images/imgs'+counter+'.jpg');
+},2000)
