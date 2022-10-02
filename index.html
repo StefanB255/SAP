@@ -23,13 +23,15 @@
                <div class="row">
                    <div class="col-8 offset-2">
                        <table class="table table-striped">
-                           <thead class="thead-dark bg-dark text-light">
+                           <thead class="thead-dark bg-dark text-light" id="head-table">
                                <tr>
                                    <th>#</th>                                             <th>Name</th>                                         <th>Lastname</th>
                                    <th>Email</th>
                                    <th>Phone</th>
-                                   <th>Edit</th>
-                                   <th>Delete</th>
+<!--
+                                   <th class="adding">Edit</th>
+                                   <th class="adding">Delete</th>
+-->
                                </tr>
                            </thead>
                            <tbody id="atb">
@@ -39,6 +41,102 @@
                    </div>
                </div>
            </div>
+           <div class="slider">
+               <img src="images/imgs1.jpg" alt="">
+           </div>
+           
+<!--
+           <div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li><a href="#">PHP</a></li>
+      <li><a href="#">Python</a></li>
+      <li><a href="#">jQuery</a></li>
+      <li><a href="#">SQL</a></li>
+      <li><a href="#">Bootstrap</a></li>
+      <li><a href="#">Node.js</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#ddd;">
+    <h2>Page Content</h2>
+    <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+    <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+    <p>Some text..</p>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+-->
+  
+        <div class="Search-container">
+          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myTable">
+      <li><a href="#">Mirko</a></li>
+      <li><a href="#">nina</a></li>
+      <li><a href="#">Ana</a></li>
+      <li><a href="#">PHP</a></li>
+      <li><a href="#">Python</a></li>
+      <li><a href="#">jQuery</a></li>
+      <li><a href="#">SQL</a></li>
+      <li><a href="#">Bootstrap</a></li>
+      <li><a href="#">Node.js</a></li>
+    </ul>
+        </div>   
+          <script>
+//            function myFunction(){
+//                var input, filter, ul, li, a, i;
+//              input.document.getElementById("mySearch");
+//              filter.input.value.toUpperCase();
+//              ul = document.getElementById("myMenu");
+//              li = ul.getElementsByTagName("li");
+//              for(i = 0; i < li.length; i++) {
+//                  a = li[i].getElementsByTagName("a")[0];
+//                  if(a.innerHTML.toUpperCase().indexOf(filter) > -1 ){
+//                         li[i].style.display = "";
+//                         }else{
+//                         li[i]style.display = "none";
+//                         }
+//              }
+//            }
+              function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myTable");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+           </script>       
        </div>
 <!--       Kraj pregleda Account-a-->
   
@@ -49,13 +147,15 @@
                <h2>Add Accounts</h2>
                <div class="row" >
                    <div class="col-8 offset-2">
-                        <input type="text" class="form-control" placeholder="#ID"><br>
-                        <input type="text" class="form-control" placeholder="Name"><br>
+                       <input type="text" class="form-control" placeholder="Name"><br>
                         <input type="text" class="form-control" placeholder="Lastname"><br>
                        
                         <input type="email" id="email" name="email" class="form-control" placeholder="Email" required><br>
                         <input type="text" class="form-control" placeholder="Phone"><br>
                         <button id="save" class="form-control btn btn-primary">Save</button>
+                       
+                        <input type="text" class="form-control invisible" placeholder="#ID">
+                        
                    </div>
                </div>
            </div>
@@ -69,7 +169,7 @@
                <h2>Add Accounts</h2>
                <div class="row" >
                    <div class="col-8 offset-2">
-                        <input type="text" class="form-control eID"><br>
+<!--                        <input type="text" class="form-control eID invisible"><br>-->
                         <input type="text" class="form-control eNAME"><br>
                         <input type="text" class="form-control eLASTNAME"><br>
                        
