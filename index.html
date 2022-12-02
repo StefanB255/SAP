@@ -30,7 +30,6 @@
                                    <th>Phone</th>
                                    <th class="adding">Edit</th>
                                    <th class="adding">Delete</th>
-
                                </tr>
                            </thead>
                            <tbody id="atb">
@@ -40,46 +39,11 @@
                    </div>
                </div>
            </div>
-
-<!--       Kraj pregleda Account-a-->
-  
-  <!--         <div class="Search-container">
-          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-    <ul id="myTable">
-      <li><a href="#">Mirko</a></li>
-      <li><a href="#">nina</a></li>
-      <li><a href="#">Ana</a></li>
-      <li><a href="#">PHP</a></li>
-      <li><a href="#">Python</a></li>
-      <li><a href="#">jQuery</a></li>
-      <li><a href="#">SQL</a></li>
-      <li><a href="#">Bootstrap</a></li>
-      <li><a href="#">Node.js</a></li>
-    </ul>
-        </div>    -->
-<!--  Dodavanje Account-a-->
-  <div class="row view" id="add-account-view">
-           <div class="col-10 offset-1">
-               <h2>Add Accounts</h2>
-               <div class="row" >
-                   <div class="col-8 offset-2">
-                       <input type="text" class="form-control" placeholder="Name"><br>
-                        <input type="text" class="form-control" placeholder="Lastname"><br>
-                       
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required><br>
-                        <input type="text" class="form-control" placeholder="Phone"><br>
-                        <button id="save" class="form-control btn btn-primary">Save</button>
-                       
-                        <input type="text" class="form-control invisible" placeholder="#ID">
-                        
-                   </div>
-               </div>
-           </div>
-       </div>
-<!--       Kraj dodavanja Account-a-->
- <!--            <div class="slider">
+<!--
+           <div class="slider">
                <img src="images/imgs1.jpg" alt="">
-           </div> -->
+           </div>
+-->
            
 <!--
            <div class="row">
@@ -127,7 +91,22 @@ function myFunction() {
 </script>
 -->
   
-
+<!--
+        <div class="Search-container">
+          <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myTable">
+      <li><a href="#">Mirko</a></li>
+      <li><a href="#">nina</a></li>
+      <li><a href="#">Ana</a></li>
+      <li><a href="#">PHP</a></li>
+      <li><a href="#">Python</a></li>
+      <li><a href="#">jQuery</a></li>
+      <li><a href="#">SQL</a></li>
+      <li><a href="#">Bootstrap</a></li>
+      <li><a href="#">Node.js</a></li>
+    </ul>
+        </div>   
+-->
           <script>
 //            function myFunction(){
 //                var input, filter, ul, li, a, i;
@@ -160,21 +139,46 @@ function myFunction() {
   }
 }
            </script>       
-       </div>      
-<!--            Edit Accounts početak-->
- 
-  <div class="row view" id="edit-account-view">
+       </div>
+<!--       Kraj pregleda Account-a-->
+  
+  
+<!--  Dodavanje Account-a-->
+  <div class="row view" id="add-account-view">
            <div class="col-10 offset-1">
                <h2>Add Accounts</h2>
                <div class="row" >
                    <div class="col-8 offset-2">
-<!--                        <input type="text" class="form-control eID invisible"><br>-->
-                        <input type="text" class="form-control eNAME"><br>
-                        <input type="text" class="form-control eLASTNAME"><br>
+                       <input type="text" class="form-control" placeholder="Name"><br>
+                        <input type="text" class="form-control" placeholder="Lastname"><br>
                        
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required><br>
+                        <input type="text" class="form-control" placeholder="Phone"><br>
+                        <button id="save" class="form-control btn btn-primary">Save</button>
+                       
+                        <input type="text" class="form-control invisible" placeholder="#ID">
+                        
+                   </div>
+               </div>
+           </div>
+       </div>
+<!--       Kraj dodavanja Account-a-->
+       
+<!--            Edit Accounts početak-->
+ 
+  <div class="row view" id="edit-account-view">
+           <div class="col-10 offset-1">
+               <h2>Edit Accounts</h2>
+               <div class="row" >
+                   <div class="col-8 offset-2">
+                        
+                        <input type="text" class="form-control eNAME"><br>
+                        <input type="text" class="form-control eLASTNAME"><br>  
                         <input type="email" id="email" name="email" class="form-control eEMAIL" required><br>
                         <input type="text" class="form-control ePHONE"><br>
                         <button id="edit" class="form-control btn btn-warning">Edit</button>
+                        
+                        <input type="text" class="form-control eID invisible"><br>
                    </div>
                </div>
            </div>
