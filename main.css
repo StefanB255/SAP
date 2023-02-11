@@ -1,0 +1,852 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+}
+.few-words h4{
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+.intro-body{
+    overflow: hidden;
+    display: block;
+}
+.customer-roll-btn{
+    
+}
+.background-layout{
+   
+   
+   height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+.background-layout video{
+    width: 100%;
+    overflow: hidden;
+}
+header{
+    align-items: center;
+    padding: 0px 15px;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0 10px;
+}
+.logo img{
+    width: 100px;
+}
+.main-title{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.main-text h1{
+    width: 50%;
+    margin: 50px auto;
+    position: relative;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: rgb(250,250,250);
+    font-size: 65px;
+    font-weight: 900;
+    filter: blur(0px);
+    visibility: visible;
+    position: relative;
+    mix-blend-mode: overlay;
+}
+.main-buttons{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.main-buttons h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 45px;
+    text-align: center;
+}
+.main-buttons a{
+    padding: 12px 80px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.main-buttons a:hover{
+    border: 1px solid #fff;
+    color: #fff;
+}
+.main-buttons .grow-btn{
+    background-color: white;
+    color: #000;
+}
+.main-buttons .roll-btn{
+    background: #0147d6;
+    color: #fff;
+}
+.navbar a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+}
+.customer header{
+    background-color: #000;
+}
+.customer{
+    background-color: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    display: none;
+}
+
+.customer-title{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    color: #fff;
+    z-index: 10;
+}
+.customer-title h6{
+   font-size: 25px
+}
+.customer-title h1{
+   font-size: 75px;
+    font-weight: 700;
+}
+.customer-video{
+    padding: 40px 0;
+    text-align: left;
+    position: relative;
+}
+.customer-video .video{
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+.customer-video video{
+    width: 100%;
+    
+}
+.customer-video a{
+    position: absolute;
+    left: 20%;
+    transform: translate(20%, -15%);
+    bottom: 15%;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+.customer-people{
+    width: 40%;
+    right: 5%;
+    position: absolute;
+    bottom: 8%;
+    transform: translate(-5%, -8%);
+    color: #fff;
+    background-color: #0f0f0f;
+    padding: 30px;
+}
+.few-words{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.few-words h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+.few-words p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.clients{
+    text-align: center;
+    width: 80%;
+    margin: 40px auto;
+}
+.clients-title h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 3rem
+}
+.clients-logo img{
+    width: 160px;
+    height: fit-content;
+}
+.clients-logo{
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+}
+.jdm-numbers{
+    background: url(imgs/jdm-numbers-truck-photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.number-container{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    height: 100%;
+}
+.numbers-title h1{
+    font-size: 111px;
+    font-weight: 700;
+}
+.numbers-title p{
+    font-size: 20px;
+    margin-bottom: 5rem;
+}
+.numbers{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto
+}
+.numbers h2{
+    font-size: 80px;
+    font-weight: 900;
+}
+.numbers h3{
+    font-size: 50px;
+    font-weight: 900;
+}
+.expedite-boxes{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 100%;
+    position: relative;
+    justify-content: space-around;
+    text-align: -webkit-center;
+}
+.load-box{
+    background: url(imgs/full-truck-load.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+.expedite-box{
+    background: url(imgs/expedite.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+.trailer-box{
+    background: url(imgs/trailer-pool.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+.dedicated-box{
+    background: url(imgs/dedicated.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 55vh;
+}
+.get-in-touch{
+    height: 40vh;
+    display: grid;
+    align-items: center;
+    
+}
+.get-in-touch h2{
+    font-weight: 700;
+    font-size: 25px;
+}
+.box-title{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+/*.title-box*/ .cargo-description{ 
+    text-align: center;
+    bottom: 2%;
+    height: 60px;
+    left: 50%;
+    transform: translate(-50%, 2%);
+    position: absolute;
+    width: 80%;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.title-box{
+    margin-top: -0.4rem;
+}
+.title-box h2{
+    margin-bottom: -0.1rem;
+    font-size: 40px;
+    font-weight: 700;
+}
+.title-box p{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.box-title{
+    background-color: transparent;
+    overflow: hidden;
+}
+.box-title:hover{
+  background-color: rgba(0, 0, 0, 0.53); 
+}
+.box-title:hover .cargo-description{
+    height: 150px;
+}
+.cargo-box{
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+.box-onk{
+    height: 300px;
+}
+.edi-box{
+    background: url(imgs/electronic-document-integration-.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 98%;
+    height: 55vh;
+    margin: 0 auto;
+}
+.available-box{
+   background: url(imgs/available-trucks.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 45vh;
+}
+.full-box{
+    background: url(imgs/24-7-load-tracking.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 45vh;
+}
+.says-title{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.says-title h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+.comments-container{
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.comments-box{
+    width: 70%;
+}
+.carrier h4{
+        font-weight: 700;
+}
+.white-logo{
+    text-align: center;
+    padding-top: 70px;
+}
+.comments-box{
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.buttons-box a{
+    font-weight: 600;
+    padding: 15px 50px;
+    border-radius: 2px;
+}
+#drivers-page{
+    display: none;
+}
+.drivers-page header{
+    padding: 0px 15px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background-color: #00000066;
+}
+.drivers-intro{
+    position: relative;
+}
+.drivers-intro video{
+    width: 100%;
+}
+.drivers-title{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+}
+.drivers-title .title h1{
+    color: rgba(255, 255, 255, 0.43);
+    font-weight: 900;
+    font-size: 140px;
+}
+.drivers-contact h2,a{
+    font-size: 55px;
+    color: #fff;
+    font-weight: 900;
+}
+.drivers-contact a{
+    padding: 10px 45px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.make-difference{
+    text-align: center;
+    width: 60%;
+    margin: 40px auto;
+}
+.make-difference h1{
+    font-weight: 700;
+    font-size: 45px;
+    color: #000;
+}
+.make-difference p{
+    font-size: 18px;
+    font-weight: 300;
+}
+.ch-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 20px;
+}
+.ch-box{
+    padding: 10px;
+    min-height: 350px;
+    display: grid;
+    margin: 10px 10px;
+    align-content: center;
+    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+    color: #000;
+    border-radius: 5px
+}
+.ch-box:hover,.ch-box.active:hover{
+    background-image: linear-gradient(rgb(214, 211, 211), #fff);
+    color: #000;
+}
+.ch-box.active{
+    background-color: #0d6efd;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+.ch-title h3{
+    font-weight: 700;
+}
+.ch-desc p{
+    font-size: 17px;
+    min-height: 102px;
+}
+.ch-box a{
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    font-weight: 700;
+    
+}
+.truck-img{
+    width: 40%;
+    margin: 100px auto 0 auto;
+}
+.truck-img img{
+    width: 100%;
+}
+.book-btn{
+    text-align: center;
+}
+.book-btn a{
+    padding: 12px 70px;
+    font-weight: 700;
+    font-size: 17px;
+}
+.operation-container{
+    width: 80%;
+    margin: 40px auto;
+    padding: 80px;
+    background-color: #161b2d!important;
+    color: #fff;
+    display: flex;
+}
+.operation-box{
+    width: 70%;
+}
+.operation-title h1{
+    font-weight: 800;
+    font-size: 60px;
+}
+.operation-desc{
+    width: 90%;
+}
+.operation-btns a{
+    padding: 15px 70px;
+    font-weight: 500;
+}
+.operations-img-box{
+    width: 30%;
+    align-self: center;
+    margin: 0 auto;
+}
+.operations-img-box img{
+    width: 100%;
+    height: 200px;
+}
+.operations-img{
+    position: relative;
+}
+.operations-img i{
+    align-items: center;
+    display: flex;
+    z-index: 0;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+    font-size: 90px;
+    color: red;
+    cursor: pointer;
+}
+.operations-img i:hover{
+    background-color: #00000085;
+}
+.operation-area{
+    background-color: #212123;
+    color: #fff;
+}
+.operation-stuff{
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0 10px 0;
+}
+.operation-area h1{
+    font-weight: bold;
+    font-size: 47px;
+}
+.operation-area-desc p{
+    font-size: 17px;
+}
+.operation-drivers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.operation-drivers h4{
+    font-weight: 700;
+}
+#toggle{
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    border-radius: 160px;
+    margin: 0 20px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.indicator{
+    background-color: #212123;
+    width: 33px;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translate(0, -50%);
+    border-radius: 100%;
+    transition: 0.5s ease-in-out;
+}
+#toggle.active{
+    background-color: #0147d6;
+}
+#toggle.active .indicator{
+    left: 44px;
+    background-color: #fff;
+}
+.operation-maps{
+    width: 80%;
+    height: 110vh;
+    background: url(imgs/usa-map-solo-drivers.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
+.operation-maps.active{
+   width: 80%;
+    height: 110vh;
+    background: url(imgs/usa-map-team-drivers.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
+.equal-desc-box{
+    width: 50%;
+    padding: 0px 80px;
+    align-self: center;
+}
+.equal-desc-box h1, span{
+    font-weight: 900;
+}
+.equal-desc-box p{
+    font-size: 17px;
+}
+.equal-desc-box a{
+    padding: 10px 50px;
+}
+.equal-container{
+    display: flex;
+    height: 100vh;
+}
+.equal-img{
+    background: url(imgs/equal-opportunity-employer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+.eco-desc-box{
+    width: 50%;
+    padding: 90px 80px;
+    align-self: center;
+    background-color: #0147D6;
+    height: 100%;
+}
+.eco-desc-box h1, span{
+    font-weight: 900;
+}
+.eco-desc-box p{
+    font-size: 17px;
+}
+.eco-desc-box a{
+    padding: 10px 50px;
+}
+.eco-container{
+    display: flex;
+    height: 100vh;
+    flex-direction: row-reverse;
+}
+.eco-img{
+    background: url(imgs/eco-aware-and-certified.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+.descc{
+    display: grid;
+    position: relative;
+    margin: 50px auto;
+    align-items: center;
+    color: #fff;
+}
+.reviews{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    place-items: center;
+}
+.review-box{
+    display: grid;
+    width: 350px;
+    box-shadow: 0px 47px 48px 0px rgb(100 146 188 / 20%);
+    margin: 40px 0;
+    border-radius: 5px;
+}
+.review-img img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.review-desc p{
+    margin-top: 1rem;
+    padding: 0 25px;
+    margin-bottom: 1rem;
+}
+.way-up a{
+    padding: 10px 60px;
+    font-weight: 700;
+    font-size: 17px
+}
+.fuel-discount{
+    margin-top: 100px;
+    background-image: url(imgs/rental-discount-bg.png);
+    background-position:left 32% bottom 0px;
+    background-size: cover;
+    background-color: #212123!important;
+    padding-top: 1px;
+    color: #fff;
+}
+.fuel-descripton{
+    width: 70%;
+    margin: 10% 0 0 15%;
+    padding: 10px 0;
+}
+.fuel-title{
+    padding: 3% 0%;
+    width: 60%;
+}
+.fuel-title h2{
+    font-size: 6rem;
+    font-weight: 900;
+}
+.fuel-title h2 span{
+    color: #ff900c;
+}
+.fuel-desc{
+    width: 60%;
+    font-size: 17px;
+}
+.fuel-desc a{
+    padding: 10px 60px;
+    font-weight: 700;
+    font-size: 17px
+}
+.partners{
+    margin: 5% 0;
+    display: flex;
+}
+.partner-1{
+        margin: 0 50px 0 0;
+}
+.subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.subscribe h1{
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+.newsletter{
+    width: 25%;
+    margin: 0 5%;
+}
+.subscribe input{
+    padding: 0px 11px;
+    outline: none;
+    border-radius: 5px;
+    width: 400px;
+    height: 60px;
+}
+.input{
+    position: relative;
+    margin-right: 5%;
+}
+
+.subscribe a{
+    position: absolute;
+    right: 1%;
+    top: 34%;
+    padding: 11px 20px;
+    transform: translate(-1%, -29%);
+}
+.footer-menu{
+    background: url(imgs/grey-truck-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+}
+.footer-span{
+    background: url(data:image/svg+xml;base64,PHN2ZyAgZmlsbD0icmdiYSgwLDAsMCwwLjIpIiBoZWlnaHQ9IjhweCIgd2lkdGg9IjhweCIgdmlld0JveD0iMCAwIDggOCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0Ii8+PC9zdmc+);
+    background-position: 0 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.menu{
+    position: relative;
+    height: 100%;
+    align-items: baseline;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto 20px;
+    grid-gap: 50px;
+    align-content: center;
+}
+.menu-title h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.menu ul{
+    padding-left: 0;
+}
+.menu ul li{
+    line-height: 2;
+}
+.menu-list{
+    align-content: center;
+}
+.menu a{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+.privacy-policy{
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-between;
+    background-color: #212123;
+    color: #fff;
+}
+.privacy-policy p{
+    margin-bottom: 0;
+}
+.privacy-policy a{
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: 500;
+}
+.copyright h3{
+    color: #fff;
+    font-size: 1.3rem;
+    background-color: #ff900c;
+     margin-bottom: 0rem; 
+     line-height: normal;
+    padding: 20px 0;
+    text-align: center;
+}
